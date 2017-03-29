@@ -1,0 +1,114 @@
+
+html{
+background-image: url("../images/space-wallpaper-hd-12.jpg");
+}
+body{
+    width:1400px;
+    margin-left:auto;
+    margin-right:auto;
+    
+}
+#wrapper{
+    display: none;
+    content:'';
+    position: absolute;
+    left:0;
+    top:0;
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+h1{
+    text-align: center;
+    font-family: Roboto;
+    color:white;
+    position:fixed;
+    top:0;
+    text-transform: uppercase;
+    left:47.2%;
+    opacity:0;
+}
+.homebutton{
+     position:fixed;
+    text-align: center;
+      border-radius:5px;
+    letter-spacing: 2px;
+     background-color: rgba(253, 253, 253, 0.31);
+    color:white;
+    border:2px solid white;
+    padding: 15px 55px;
+    font-size:1.8rem;
+       transition: all 0.2s ease-in-out;
+       outline:none;
+           left:42%;
+       text-transform: uppercase;
+}
+#startButton{
+
+    top:45%;
+    padding: 15px 115px;
+   
+}
+#howToPlayButton{
+
+    top:55%;
+    
+   
+}
+#scoreboardButton{
+
+    top:65%;
+   
+}
+.homebutton:hover{
+      transition: all 0.2s ease-in-out;
+      transform:scale(1.2);
+    box-shadow:0 0 10px white;
+    cursor: pointer;
+}
+
+form{
+    position: fixed;
+    z-index: 2;
+    left:38%;
+    top:25%;
+    display: none;
+    
+}
+form input{
+    font-size: 1.3rem;
+    z-index: 2;
+    width: 20px;
+    padding:15px;
+    border-color: gray;
+    background-color: rgba(255, 255, 255, 0.46);
+    color: white;
+}
+form input::-webkit-outer-spin-button,
+form input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+@media (max-width: 600px) {
+    .homebutton{
+        left:10%;
+    }
+    h1{
+        left:37%;
+    }
+    html{
+       background-image: url("../images/MobileBackground.jpg"); 
+    }
+    form{
+        left:4%;
+    }
+    form input{
+        height:20px;
+        padding:9px;
+       
+    }
+    
+}
